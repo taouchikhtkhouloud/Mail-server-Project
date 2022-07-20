@@ -21,7 +21,6 @@
         <div class="title m-b-md">
            Send your mail now !!
         </div>
-        <button class="loginBtn ">log in </button>
     </div>
 </div>
 @endsection

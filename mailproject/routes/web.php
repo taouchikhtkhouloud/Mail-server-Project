@@ -17,4 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/msg', 'App\Http\Controllers\MsgController@index');
+Route::get('/msg/new','App\Http\Controllers\MsgController@create');
+Route::post('/msg','App\Http\Controllers\MsgController@store');
 Route::get('/msg/{id}', 'App\Http\Controllers\MsgController@show');
+Route::delete('/msg/{id}', 'App\Http\Controllers\MsgController@destroy');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

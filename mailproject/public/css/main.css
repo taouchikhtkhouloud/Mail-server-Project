@@ -1,7 +1,7 @@
 html,
 body {
   background-color: #fff;
-  color: #636b6f;
+  color: #ECB390;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   height: 100vh;
@@ -13,12 +13,9 @@ body {
 }
 
 .flex-center {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
+  align-items: center;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .position-ref {
@@ -68,21 +65,48 @@ footer {
   padding: 10px;
   margin: 20px auto;
 }
-.loginBtn{
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 25px;
-    color: #fff;
-    border: none;
-    background-color: #ECB390;
-    transition: all ease 0.3ms;
+
+.loginBtn {
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #fff;
+  border: none;
+  background-color: #ECB390;
+  transition: all ease 0.3ms;
+  cursor: pointer;
 }
-.loginBtn:hover{
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 25px;
-    color: #ECB390;
-    background-color: #fff;
-    border: #ECB390 solid 1px;
-    width: 120px;
+
+.loginBtn:hover {
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #ECB390;
+  background-color: #fff;
+  border: #ECB390 solid 1px;
+  width: 120px;
+}
+
+input {
+  border: #ECB390 solid 1px;
+  padding: 20px;
+}
+
+label {
+  display: flex;
+  padding: 20px;
+}
+
+.btn {
+  display: block;
+  padding: 20px;
+  margin: 20px;
+  margin-left: 180px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #fff;
+  border: none;
+  background-color: #ECB390;
+  transition: all ease 0.3ms;
+  cursor: pointer;
 }
