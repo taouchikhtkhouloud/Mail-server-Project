@@ -1,7 +1,7 @@
 html,
 body {
   background-color: #fff;
-  color: #ECB390;
+  color: #827e7b;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
   height: 100vh;
@@ -69,7 +69,7 @@ footer {
 .loginBtn {
   padding: 20px;
   border-radius: 20px;
-  font-size: 25px;
+  font-size: 20px;
   color: #fff;
   border: none;
   background-color: #ECB390;
@@ -78,13 +78,13 @@ footer {
 }
 
 .loginBtn:hover {
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
-  font-size: 25px;
+  font-size: 20px;
   color: #ECB390;
   background-color: #fff;
   border: #ECB390 solid 1px;
-  width: 120px;
+  width: 100px;
 }
 
 input {
@@ -109,4 +109,18 @@ label {
   background-color: #ECB390;
   transition: all ease 0.3ms;
   cursor: pointer;
+}
+.friend{
+  padding: 10px;
+  display: flex;
+  border: 0.4px solid #a0a2a3;
+  border-radius: 10px;
+  box-shadow: #636b6f;
+}
+.message{
+  padding: 10px;
+  display: flex;
+  border: 0.4px solid #a0a2a3;
+  border-radius: 10px;
+  box-shadow: #636b6f;
 }

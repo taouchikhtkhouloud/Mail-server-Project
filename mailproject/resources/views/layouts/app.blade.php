@@ -18,7 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet">        <!-- Styles -->
+    <link href="/css/main.css" rel="stylesheet">  
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">      <!-- Styles -->
 
 </head>
 <body>

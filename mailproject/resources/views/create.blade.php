@@ -8,7 +8,7 @@
 </h1>
 <form action="/msg" method="POST">
     @csrf
-    <label for="name">Your name:</label>
+    <label for="name">to:</label>
     <input type="text" name="name" id="name" required>
     <label for="message">Your message:</label>
     <input type="text" name="message" id="name" required>
