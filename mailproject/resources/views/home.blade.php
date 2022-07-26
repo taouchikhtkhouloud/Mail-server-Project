@@ -15,16 +15,31 @@
                     @endif
 
                     
-                    <br/>
-                    <div class="message">
-                    
-                        <a href="/msg"><i class="fa-solid fa-messages"></i>View all messages</a>
-                    </div>
-                    <br/>
-                    <div class="friend">
-                       
-                        <a href="/friend"> <i class="fa-solid fa-user-group"></i>View all friends</a>
-                    </div>
+                    <div class="row chat-row">
+        <div class="col-md-3">
+            <div class="users">
+                <i class="far fa-user"></i>
+                <h5>Friends</h5>
+            </div>
+                <ul class="list-group list-chat-item">
+                    @if($users->count())
+                        @foreach($users as $user)
+                            <li class="chat-user-list">
+                              
+                                    <div class="chat-image">
+                                            {!! makeImageFromName($user->name) !!}
+                                    </div>
+
+                                    <div class="chat-name font-weight-bold">
+                                        {{ $user->name }}
+                                    </div>
+                                </a>
+                            </li>
+                        @endforeach
+                    @endif
+                </ul>
+            
+        </div>
                 </div>
             </div>
         </div>
