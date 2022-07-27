@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-       <script src="{{ mix('js/app.js') }}" defer></script>        <title>Laravel</title>
-
+       <script src="{{ mix('js/app.js') }}" ></script>        <title>Laravel</title>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>    <!-- Fonts -->
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="/css/main.css" rel="stylesheet">        <!-- Styles -->
@@ -23,4 +23,5 @@
     <body class="antialiased">
         @yield('content')
     </body>
+    @stack('scripts')
 </html>

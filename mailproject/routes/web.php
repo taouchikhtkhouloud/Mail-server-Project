@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/msg', 'App\Http\Controllers\MsgController@index');
 Route::get('/msg/new','App\Http\Controllers\MsgController@create');
 Route::post('/msg','App\Http\Controllers\MsgController@store');
-Route::get('/msg/{id}', 'App\Http\Controllers\MsgController@show');
+Route::get('/msg/{userId}', 'App\Http\Controllers\MsgController@conversation')->name('message.conversation');
 Route::delete('/msg/{id}', 'App\Http\Controllers\MsgController@destroy');
 Auth::routes();
 

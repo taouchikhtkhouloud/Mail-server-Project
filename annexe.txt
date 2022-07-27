@@ -1,0 +1,6 @@
+for blod text : onclick="document.execCommand('bold', false, '');
+for italic text : onclick="document.execCommand('italic', false, '');
+
+
+Socket.IO est une bibliothèque qui permet une communication à faible latence, 
+bidirectionnelle et basée sur les événements entre un client et un serveur.

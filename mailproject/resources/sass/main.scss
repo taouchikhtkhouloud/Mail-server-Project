@@ -13,12 +13,9 @@ body {
 }
 
 .flex-center {
-  -webkit-box-align: center;
-          align-items: center;
-  display: -webkit-box;
+  align-items: center;
   display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .position-ref {
@@ -68,39 +65,41 @@ footer {
   padding: 10px;
   margin: 20px auto;
 }
-.loginBtn{
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 25px;
-    color: #fff;
-    border: none;
-    background-color: #ECB390;
-    transition: all ease 0.3ms;
-    cursor: pointer;
-}
-.loginBtn:hover{
-    padding: 20px;
-    border-radius: 20px;
-    font-size: 25px;
-    color: #ECB390;
-    background-color: #fff;
-    border: #ECB390 solid 1px;
-    width: 120px;
+
+.loginBtn {
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #fff;
+  border: none;
+  background-color: #ECB390;
+  transition: all ease 0.3ms;
+  cursor: pointer;
 }
 
-input{
+.loginBtn:hover {
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #ECB390;
+  background-color: #fff;
+  border: #ECB390 solid 1px;
+  width: 120px;
+}
 
+input {
   border: #ECB390 solid 1px;
   padding: 20px;
 }
-label{
+
+label {
   display: flex;
   padding: 20px;
 }
-.btn{
+
+.btn {
   display: block;
-  padding: 20px;
-  margin: 20px;
+ 
   margin-left: 180px;
   border-radius: 20px;
   font-size: 25px;
@@ -109,4 +108,114 @@ label{
   background-color: #ECB390;
   transition: all ease 0.3ms;
   cursor: pointer;
+}
+.logo{
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+}
+.chat-row {
+  margin: 50px;
+}
+
+.chat-user-list {
+  list-style: none;
+  border: 1px solid #daccc9;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 7px 12px 33px -11px rgba(200, 158, 148, 0.77); 
+  box-shadow: 7px 12px 33px -11px rgba(192, 165, 158, 0.77);
+
+}
+.users{
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+}
+.users h5{
+  padding-left: 20px;
+ 
+  font-size: 24px;
+}
+
+.chat-image, .chat-name {
+  display: inline-block;
+  color: grey;
+}
+
+.chat-user-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-user-list.active {
+  background: #e4e4e4;
+}
+
+.user-status-icon {
+  position: absolute;
+  margin-top: 5px;
+  left: 388px;
+  color: grey;
+  
+}
+
+.chat-image {
+ 
+  background-color: #DF7861;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 50%;
+  font-weight: bold;
+ 
+  display: inline-block;
+  text-align: center;
+ 
+  text-transform: uppercase;
+}
+
+.chat-header {
+  min-height: 60px;
+  padding: 10px;
+  margin-bottom: 2px;
+  background: #ffffff
+}
+
+.chat-body {
+ height: calc(100vh - 375px);
+   background: #ffffff;
+  padding: 30px 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.message-text {
+  margin-left: 45px;
+  margin-top: -10px;
+}
+
+.chat-input {
+  border: 1px solid lightgray;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 8px 10px;
+}
+
+.chat-input-toolbar {
+  display: flex;
+  border-left: 1px solid rgb(220, 218, 218);
+  border-right: 1px solid rgb(220, 218, 218);
+  border-bottom: 1px solid rgb(220, 218, 218);
+  margin-bottom: 10px;
+}
+.chat-input-toolbar button{
+ justify-content: center;
+ margin: 20px;
+ font-size: 18px;
 }
