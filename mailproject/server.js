@@ -1,12 +1,21 @@
-var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+const express = require('express');
+
+const app = express();
+
+
+const server = require('http').createServer(app);
+
+var cors = require('cors'); 
+app.use(cors({credentials: true, origin: '*'}));
+const io = require('socket.io')(server, {
+    cors: { origin: "*"}
+});
 //var Redis = require('ioredis');
 //var redis = new Redis();
 var users = [];
 var groups = [];
 
-http.listen(8005, function () {
+server.listen(8005, function () {
     console.log('Listening to port 8005');
 });
 
@@ -41,17 +50,19 @@ redis.on('message', function(channel, message) {
 }); */
 
 io.on('connection', function (socket) {
-    socket.on("user_connected", function (user_id) {
-        users[user_id] = socket.id;
+    //socket.on("user_connected", function (user_id) {
+        /* users[user_id] = socket.id;
         io.emit('updateUserStatus', users);
-        console.log("user connected "+ user_id);
-    });
+        console.log("user connected "+ user_id); */ 
+        console.log('connection');
+   // });
 
     socket.on('disconnect', function() {
-        var i = users.indexOf(socket.id);
+        /* var i = users.indexOf(socket.id);
         users.splice(i, 1, 0);
         io.emit('updateUserStatus', users);
-        console.log(users);
+        console.log(users); */
+        console.log("disconnection");
     });
 
     socket.on('joinGroup', function(data) {
