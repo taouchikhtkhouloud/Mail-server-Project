@@ -47,7 +47,7 @@
 
                             @endif
                         @empty
-                            <h5 style="text-align: center;color:red"> لاتوجد رسائل سابقة</h5>
+                            <h5 style="text-align: center;color:red"> you don't have any messages</h5>
                         @endforelse
 
                     </div>
@@ -55,8 +55,8 @@
                         <div class="input_msg_write">
                             <form wire:submit.prevent="sendMessage">
                                 <input onkeydown='scrollDown()' wire:model.defer="messageText" type="text"
-                                    class="write_msg" placeholder="اكتب رسالتك" />
-                                <button class="msg_send_btn" type="submit">ارسال</button>
+                                    class="write_msg" placeholder="write your message" />
+                                <button class="msg_send_btn" type="submit">send</button>
                             </form>
                         </div>
                     </div>
